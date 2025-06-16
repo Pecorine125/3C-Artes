@@ -8,7 +8,11 @@ const imgArray = [
     "https://cdn.prod.website-files.com/60ff690cd7b0537edb99a29a/61f4494b36535cfd07b98bd7_Conceito-de-arte.webp",
     "https://www.colegiodosjesuitas.com.br/wp-content/uploads/2021/08/Artigo_Site_Dia-das-Artes.jpg",
     "https://static.significados.com.br/foto/tipos-de-arte-og.jpg",
-    "https://static.todamateria.com.br/upload/ti/po/tipos-de-arte-og.jpg"
+    "https://static.todamateria.com.br/upload/ti/po/tipos-de-arte-og.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/6/6d/Art_rupestre_Chimiachas.jpg",
+    "https://live.staticflickr.com/42/121113763_7041560733_b.jpg",
+    "https://live.staticflickr.com/5559/14666392888_5358a55527_b.jpg",
+    "https://live.staticflickr.com/3876/14872845933_0d6152c9b2_b.jpg",
 ];
 
 let currentIndex = 0;
