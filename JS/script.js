@@ -26,7 +26,7 @@ const musicas = [
   {
     nome: "Art is Hard – Cursive",
     descricao: "Crítica à indústria da arte e sua comercialização",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/4/49/Cursive_-_The_Ugly_Organ.jpg",
+    imagem: "https://live.staticflickr.com/323/19809738712_443067ccc2_b.jpg",
     link: "https://www.youtube.com/watch?v=71wFUYUbtjs" // FUNCIONANDO
   }
 ];
