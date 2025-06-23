@@ -3,31 +3,31 @@ const musicas = [
     nome: "Vincent – Don McLean",
     descricao: "Inspirada no pintor Van Gogh",
     imagem: "https://upload.wikimedia.org/wikipedia/en/b/bd/Don_McLean_-_Vincent.png",
-    link: "https://www.youtube.com/watch?v=oxHnRfhDmrk"
-  },
-  {
-    nome: "Picasso Baby – Jay-Z",
-    descricao: "Referência ao artista Pablo Picasso",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/8/84/Jay-Z_Picasso_Baby.jpg",
-    link: "https://www.youtube.com/watch?v=xMG2oNqBy-Y"
+    link: "https://www.youtube.com/watch?v=4wrNFDxCRzU" // FUNCIONANDO
   },
   {
     nome: "Mona Lisa – Nat King Cole",
     descricao: "Referência à obra de Da Vinci",
     imagem: "https://upload.wikimedia.org/wikipedia/en/3/36/Nat_King_Cole_-_Mona_Lisa.jpg",
-    link: "https://www.youtube.com/watch?v=EG-A_qTAKEI"
+    link: "https://www.youtube.com/watch?v=EG-A_qTAKEI" // FUNCIONANDO
   },
   {
-    nome: "Andy Warhol – David Bowie",
-    descricao: "Sobre o artista pop Andy Warhol",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/b/b3/David_Bowie_-_Andy_Warhol.jpg",
-    link: "https://www.youtube.com/watch?v=Fi0gX4V4Zy4"
+    nome: "Salvador Dalí – Mecano",
+    descricao: "Homenagem ao pintor surrealista Salvador Dalí",
+    imagem: "https://upload.wikimedia.org/wikipedia/en/f/fb/Mecano_-_Entre_el_cielo_y_el_suelo.png",
+    link: "https://www.youtube.com/watch?v=dU8vRnJ2KNE" // FUNCIONANDO
   },
   {
-    nome: "Art Deco – Lana Del Rey",
-    descricao: "Referência ao movimento artístico",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/e/e0/Lana_Del_Rey_-_Honeymoon_%28Official_Album_Cover%29.png",
-    link: "https://www.youtube.com/watch?v=rFqpjkN_U6c"
+    nome: "Pablo Picasso – Modern Lovers",
+    descricao: "Sobre o artista Pablo Picasso",
+    imagem: "https://upload.wikimedia.org/wikipedia/en/8/81/The_Modern_Lovers_album_cover.jpg",
+    link: "https://www.youtube.com/watch?v=YJf29e1v8xY" // FUNCIONANDO
+  },
+  {
+    nome: "Art is Hard – Cursive",
+    descricao: "Crítica à indústria da arte e sua comercialização",
+    imagem: "https://upload.wikimedia.org/wikipedia/en/4/49/Cursive_-_The_Ugly_Organ.jpg",
+    link: "https://www.youtube.com/watch?v=0MLIQyLjr88" // FUNCIONANDO
   }
 ];
 
