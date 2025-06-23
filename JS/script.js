@@ -2,7 +2,7 @@ const musicas = [
   {
     nome: "Vincent – Don McLean",
     descricao: "Inspirada no pintor Van Gogh",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/b/bd/Don_McLean_-_Vincent.png",
+    imagem: "https://live.staticflickr.com/4140/4830790769_c83db8cfed.jpg",
     link: "https://www.youtube.com/watch?v=4wrNFDxCRzU" // FUNCIONANDO
   },
   {
