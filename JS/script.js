@@ -3,7 +3,7 @@ const musicas = [
     nome: "Vincent – Don McLean",
     descricao: "Inspirada no pintor Van Gogh",
     imagem: "https://live.staticflickr.com/4140/4830790769_c83db8cfed.jpg",
-    link: "https://www.youtube.com/watch?v=4wrNFDxCRzU" // FUNCIONANDO
+    link: "https://www.youtube.com/watch?v=oxHnRfhDmrk" // FUNCIONANDO
   },
   {
     nome: "Mona Lisa – Nat King Cole",
