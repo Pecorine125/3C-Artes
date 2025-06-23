@@ -1,40 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background-color: #f2f2f2;
-}
-
-img {
-    max-width: 80%;
-    border-radius: 10px;
-    margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
 }
 
 h1 {
-    color: #333;
+  color: #333;
+  margin-bottom: 30px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+#lista-musicas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-li {
-    margin: 12px 0;
-    font-size: 18px;
+.musica-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
-button {
-    margin-top: 5px;
-    padding: 6px 12px;
-    background-color: #3f51b5;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.musica-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  object-fit: cover;
+  transition: transform 0.2s;
 }
 
-button:hover {
-    background-color: #303f9f;
+.musica-item img:hover {
+  transform: scale(1.05);
+}
+
+.musica-info {
+  flex: 1;
+}
+
+.musica-info h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #222;
+}
+
+.musica-info p {
+  margin: 5px 0 0;
+  color: #555;
 }
