@@ -14,7 +14,7 @@ const musicas = [
   {
     nome: "Salvador Dalí – Mecano",
     descricao: "Homenagem ao pintor surrealista Salvador Dalí",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/f/fb/Mecano_-_Entre_el_cielo_y_el_suelo.png",
+    imagem: "https://live.staticflickr.com/8421/7698778016_51fc4da530_b.jpg",
     link: "https://www.youtube.com/watch?v=Q6T97kHjKiY" // FUNCIONANDO
   },
   {
