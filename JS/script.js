@@ -8,7 +8,7 @@ const musicas = [
   {
     nome: "Mona Lisa – Nat King Cole",
     descricao: "Referência à obra de Da Vinci",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/3/36/Nat_King_Cole_-_Mona_Lisa.jpg",
+    imagem: "https://live.staticflickr.com/7158/6814444991_08d82de57e.jpg",
     link: "https://www.youtube.com/watch?v=EG-A_qTAKEI" // FUNCIONANDO
   },
   {
