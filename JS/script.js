@@ -15,19 +15,19 @@ const musicas = [
     nome: "Salvador Dalí – Mecano",
     descricao: "Homenagem ao pintor surrealista Salvador Dalí",
     imagem: "https://upload.wikimedia.org/wikipedia/en/f/fb/Mecano_-_Entre_el_cielo_y_el_suelo.png",
-    link: "https://www.youtube.com/watch?v=dU8vRnJ2KNE" // FUNCIONANDO
+    link: "https://www.youtube.com/watch?v=Q6T97kHjKiY" // FUNCIONANDO
   },
   {
     nome: "Pablo Picasso – Modern Lovers",
     descricao: "Sobre o artista Pablo Picasso",
     imagem: "https://upload.wikimedia.org/wikipedia/en/8/81/The_Modern_Lovers_album_cover.jpg",
-    link: "https://www.youtube.com/watch?v=YJf29e1v8xY" // FUNCIONANDO
+    link: "https://www.youtube.com/watch?v=Kc2iLAubras" // FUNCIONANDO
   },
   {
     nome: "Art is Hard – Cursive",
     descricao: "Crítica à indústria da arte e sua comercialização",
     imagem: "https://upload.wikimedia.org/wikipedia/en/4/49/Cursive_-_The_Ugly_Organ.jpg",
-    link: "https://www.youtube.com/watch?v=0MLIQyLjr88" // FUNCIONANDO
+    link: "https://www.youtube.com/watch?v=wix_6ZGpiU0" // FUNCIONANDO
   }
 ];
 
