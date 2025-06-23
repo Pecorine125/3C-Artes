@@ -20,7 +20,7 @@ const musicas = [
   {
     nome: "Pablo Picasso – Modern Lovers",
     descricao: "Sobre o artista Pablo Picasso",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/8/81/The_Modern_Lovers_album_cover.jpg",
+    imagem: "https://live.staticflickr.com/65535/50623723006_6736e657d1_b.jpg",
     link: "https://www.youtube.com/watch?v=Kc2iLAubras" // FUNCIONANDO
   },
   {
