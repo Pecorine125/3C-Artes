@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Menu principal">
       <div class="logo">Música nas Artes</div>
       <ul class="menu">
         <li><a href="#inicio" class="nav-link">Início</a></li>
@@ -34,24 +34,24 @@
       <h2>Contato</h2>
       <p>Entre em contato comigo via WhatsApp ou Email</p>
       <div class="contato-btns">
-        <a href="https://wa.me/5541992904207" target="_blank" class="btn whatsapp">WhatsApp</a>
-        <a href="mailto:email@exemplo.com" class="btn email">Email</a>
+        <a href="https://wa.me/5541992904207" target="_blank" class="btn whatsapp" aria-label="Conversar via WhatsApp">WhatsApp</a>
+        <a href="mailto:email@exemplo.com" class="btn email" aria-label="Enviar email">Email</a>
       </div>
 
-      <form id="formContato" class="form-contato">
+      <form id="formContato" class="form-contato" aria-label="Formulário de contato">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required />
+        <input type="text" id="nome" name="nome" required aria-required="true" />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" required aria-required="true" />
 
         <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <textarea id="mensagem" name="mensagem" rows="4" required aria-required="true"></textarea>
 
         <button type="submit" class="btn enviar">Enviar Mensagem</button>
       </form>
 
-      <div id="resposta"></div>
+      <div id="resposta" role="status"></div>
     </section>
   </main>
 
