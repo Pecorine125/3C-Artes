@@ -39,7 +39,7 @@ musicas.forEach(musica => {
 
   const img = document.createElement("img");
   img.src = musica.imagem;
-  img.alt = musica.nome;
+  img.alt = `Imagem relacionada a ${musica.nome}`;
   img.onclick = () => window.open(musica.link, "_blank");
 
   const info = document.createElement("div");
@@ -54,6 +54,7 @@ musicas.forEach(musica => {
   const btnPlay = document.createElement("button");
   btnPlay.textContent = "Play ▶";
   btnPlay.className = "btn play-btn";
+  btnPlay.setAttribute("aria-label", `Tocar música: ${musica.nome}`);
   btnPlay.onclick = (e) => {
     e.stopPropagation();
     window.open(musica.link, "_blank");
@@ -69,14 +70,14 @@ musicas.forEach(musica => {
   container.appendChild(item);
 });
 
-// Formulário de contato
 const formContato = document.getElementById("formContato");
 const resposta = document.getElementById("resposta");
 
 formContato.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Aqui você pode implementar integração com backend ou serviço de e-mail, por enquanto só feedback
+  // Feedback visual acessível
   resposta.textContent = "Mensagem enviada com sucesso! Obrigado pelo contato.";
+  resposta.setAttribute("aria-live", "polite");
   formContato.reset();
 });
