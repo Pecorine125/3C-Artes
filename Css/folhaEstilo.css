@@ -1,59 +1,230 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #f0f0f0;
-  text-align: center;
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: #333;
-  margin-bottom: 30px;
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1e2a38;
+  color: white;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #00aaff;
+}
+
+main {
+  max-width: 1100px;
+  margin: 90px auto 40px;
+  padding: 0 20px;
+}
+
+.section-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #1e2a38;
+}
+
+.section-intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.section-musicas h2,
+.section-contato h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1e2a38;
+  border-bottom: 3px solid #00aaff;
+  padding-bottom: 8px;
+  max-width: 250px;
 }
 
 #lista-musicas {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
 }
 
 .musica-item {
   display: flex;
-  align-items: center;
   background-color: #fff;
-  border-radius: 10px;
-  padding: 10px 20px;
-  width: 90%;
-  max-width: 700px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: left;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.musica-item:hover {
+  transform: scale(1.02);
 }
 
 .musica-item img {
-  width: 120px;
-  height: 120px;
-  border-radius: 10px;
-  margin-right: 20px;
-  cursor: pointer;
+  width: 150px;
   object-fit: cover;
-  transition: transform 0.2s;
-}
-
-.musica-item img:hover {
-  transform: scale(1.05);
 }
 
 .musica-info {
+  padding: 15px 20px;
   flex: 1;
 }
 
 .musica-info h3 {
-  margin: 0;
-  font-size: 20px;
-  color: #222;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #333;
 }
 
 .musica-info p {
-  margin: 5px 0 0;
-  color: #555;
+  font-size: 1rem;
+  color: #666;
+}
+
+.section-contato {
+  background-color: #eef6fb;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin-top: 50px;
+}
+
+.contato-btns {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn.whatsapp {
+  background-color: #25d366;
+}
+
+.btn.whatsapp:hover {
+  background-color: #1ebe57;
+}
+
+.btn.email {
+  background-color: #0072c6;
+}
+
+.btn.email:hover {
+  background-color: #005a9e;
+}
+
+.form-contato label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 12px;
+  color: #333;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.form-contato button.enviar {
+  margin-top: 15px;
+  background-color: #00aaff;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.form-contato button.enviar:hover {
+  background-color: #0077bb;
+}
+
+#resposta {
+  margin-top: 20px;
+  font-weight: 600;
+  color: green;
+  text-align: center;
+}
+
+/* Responsivo */
+@media(max-width: 768px) {
+  .musica-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .musica-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    margin: 0;
+  }
+  .musica-info {
+    padding: 15px 10px;
+  }
+  .menu {
+    gap: 12px;
+  }
 }
