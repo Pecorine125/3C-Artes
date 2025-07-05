@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato - Música nas Artes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Css/folhaEstilo.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Menu principal">
+      <div class="logo">Música nas Artes</div>
+      <ul class="menu">
+        <li><a href="index.html" class="nav-link">Início</a></li>
+        <li><a href="musicas.html" class="nav-link">Músicas</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-contato">
+      <h2>Contato</h2>
+      <p>Entre em contato comigo via WhatsApp ou Email</p>
+      <div class="contato-btns">
+        <a href="https://wa.me/5541992904207" target="_blank" class="btn whatsapp">WhatsApp</a>
+        <a href="mailto:email@exemplo.com" class="btn email">Email</a>
+      </div>
+
+      <form id="formContato" class="form-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit" class="btn enviar">Enviar Mensagem</button>
+      </form>
+
+      <div id="resposta" role="status"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Música nas Artes. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const formContato = document.getElementById("formContato");
+    const resposta = document.getElementById("resposta");
+
+    formContato.addEventListener("submit", (e) => {
+      e.preventDefault();
+      resposta.textContent = "Mensagem enviada com sucesso! Obrigado pelo contato.";
+      resposta.setAttribute("aria-live", "polite");
+      formContato.reset();
+    });
+  </script>
+</body>
+</html>
