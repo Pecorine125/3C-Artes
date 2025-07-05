@@ -69,15 +69,3 @@ musicas.forEach(musica => {
 
   container.appendChild(item);
 });
-
-const formContato = document.getElementById("formContato");
-const resposta = document.getElementById("resposta");
-
-formContato.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  // Feedback visual acessível
-  resposta.textContent = "Mensagem enviada com sucesso! Obrigado pelo contato.";
-  resposta.setAttribute("aria-live", "polite");
-  formContato.reset();
-});
