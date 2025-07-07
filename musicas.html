@@ -17,6 +17,7 @@
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
+    <button id="temaToggle" aria-label="Alternar tema">🌙 / ☀️</button>
   </header>
 
   <main>
@@ -40,5 +41,25 @@
   </footer>
 
   <script src="JS/script.js"></script>
+  <script>
+    const btn = document.getElementById('temaToggle');
+    const temaSalvo = localStorage.getItem('tema');
+
+    if (temaSalvo) {
+      document.body.classList.add(temaSalvo);
+    } else {
+      document.body.classList.add('light');
+    }
+
+    btn.addEventListener('click', () => {
+      if (document.body.classList.contains('light')) {
+        document.body.classList.replace('light', 'dark');
+        localStorage.setItem('tema', 'dark');
+      } else {
+        document.body.classList.replace('dark', 'light');
+        localStorage.setItem('tema', 'light');
+      }
+    });
+  </script>
 </body>
 </html>
