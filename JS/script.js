@@ -1,3 +1,25 @@
+// Controle do tema claro/escuro com persistência localStorage
+const btnTema = document.getElementById('temaToggle');
+const temaSalvo = localStorage.getItem('tema');
+
+if (temaSalvo) {
+  document.body.classList.add(temaSalvo);
+} else {
+  // Tema padrão: claro
+  document.body.classList.add('light');
+}
+
+btnTema.addEventListener('click', () => {
+  if (document.body.classList.contains('light')) {
+    document.body.classList.replace('light', 'dark');
+    localStorage.setItem('tema', 'dark');
+  } else {
+    document.body.classList.replace('dark', 'light');
+    localStorage.setItem('tema', 'light');
+  }
+});
+
+// Dados das músicas
 const musicas = [
   {
     nome: "Vincent – Don McLean",
@@ -33,6 +55,7 @@ const musicas = [
 
 const container = document.getElementById("lista-musicas");
 
+// Renderiza as músicas na página
 musicas.forEach(musica => {
   const item = document.createElement("div");
   item.className = "musica-item";
