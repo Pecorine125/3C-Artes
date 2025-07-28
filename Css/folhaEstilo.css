@@ -109,7 +109,7 @@ main {
 
 .section-musicas h2,
 .section-contato h2 {
-  font-size: 5rem;
+  font-size: 20px;
   margin-bottom: 20px;
   color: var(--cor-secundaria);
   border-bottom: 3px solid var(--cor-destaque);
