@@ -61,7 +61,7 @@ const musicas = [
     nome: "Persona 5: The Phantom X",
     descricao: "mostra um novo grupo de Phantom Thieves em ação, com um novo protagonista chamado Wonder e sua Persona inicial, além de apresentar outros personagens como Luffy (a coruja guia) e Mérope (assistente de Igor na Velvet Room",
     imagem: "https://i.ytimg.com/vi/L_PXUAL4zHQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC_t2eAw7QdmFZIEIFBcwGJWzRC1A",
-    link: "Persona 5: The Phantom X - Opening 1"
+    link: "https://www.youtube.com/watch?v=L_PXUAL4zHQ"
   }
 ];
 
