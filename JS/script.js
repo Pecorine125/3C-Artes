@@ -50,6 +50,18 @@ const musicas = [
     descricao: "Crítica à indústria da arte e sua comercialização",
     imagem: "https://live.staticflickr.com/323/19809738712_443067ccc2_b.jpg",
     link: "https://www.youtube.com/watch?v=71wFUYUbtjs"
+  },
+  {
+    nome: "Skillet-Monster",
+    descricao: "a luta interna de uma pessoa com seus próprios demônios e desejos obscuros, usando a metáfora de um *monstro* que vive dentro dela",
+    imagem: "https://i.ytimg.com/vi/MUdIKF4V4m8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBFOZXsR7CVyggn6vshiKR5zUUe0w",
+    link: "https://www.youtube.com/watch?v=MUdIKF4V4m8&list=RDMUdIKF4V4m8&start_radio=1"
+  },
+  {
+    nome: "Persona 5: The Phantom X",
+    descricao: "mostra um novo grupo de Phantom Thieves em ação, com um novo protagonista chamado Wonder e sua Persona inicial, além de apresentar outros personagens como Luffy (a coruja guia) e Mérope (assistente de Igor na Velvet Room",
+    imagem: "https://i.ytimg.com/vi/L_PXUAL4zHQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC_t2eAw7QdmFZIEIFBcwGJWzRC1A",
+    link: "Persona 5: The Phantom X - Opening 1"
   }
 ];
 
