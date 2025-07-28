@@ -114,7 +114,7 @@ main {
   color: var(--cor-secundaria);
   border-bottom: 3px solid var(--cor-destaque);
   padding-bottom: 8px;
-  max-width: 250px;
+  max-width: 280px;
 }
 
 #lista-musicas {
