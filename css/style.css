@@ -1,353 +1,385 @@
+/* Definição de variáveis de cores e fontes */
 :root {
-  --cor-fundo: #ffffff;
-  --cor-texto: #111111;
-  --cor-secundaria: #45ac94;
-  --cor-destaque: #00aaff;
-  --fonte-base: 16px;
+  --cor-fundo: #ffffff;  /* Cor de fundo padrão */
+  --cor-texto: #111111;  /* Cor do texto padrão */
+  --cor-secundaria: #45ac94; /* Cor secundária (geralmente usada para elementos como header ou botões) */
+  --cor-destaque: #00aaff; /* Cor de destaque (para hover ou foco) */
+  --fonte-base: 16px; /* Tamanho base da fonte */
 }
 
+/* Estilos específicos para o tema escuro */
 body.dark {
-  --cor-fundo: #121212;
-  --cor-texto: #f0f0f0;
-  --cor-secundaria: #a1a1e0;
-  --cor-destaque: #00c6ff;
+  --cor-fundo: #121212; /* Cor de fundo do tema escuro */
+  --cor-texto: #f0f0f0; /* Cor do texto do tema escuro */
+  --cor-secundaria: #a1a1e0; /* Cor secundária para o tema escuro */
+  --cor-destaque: #00c6ff; /* Cor de destaque para o tema escuro */
 }
 
+/* Resetando margens e paddings para garantir que o layout seja consistente */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;  /* Inclui padding e border no cálculo de largura e altura */
+  margin: 0;  /* Remove margens externas */
+  padding: 0;  /* Remove paddings internos */
 }
 
+/* Estilos gerais para o corpo da página */
 body {
-  font-family: 'Roboto', Arial, sans-serif;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-  font-size: var(--fonte-base);
-  line-height: 1.6;
+  font-family: 'Roboto', Arial, sans-serif; /* Define a fonte do corpo */
+  background-color: var(--cor-fundo); /* Cor de fundo, usando a variável */
+  color: var(--cor-texto); /* Cor do texto, usando a variável */
+  font-size: var(--fonte-base); /* Tamanho da fonte baseado na variável */
+  line-height: 1.6; /* Espaçamento entre linhas */
 }
 
+/* Estilos para links e botões */
 a, button {
-  font-size: 1rem;
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-  border: none;
-  background: none;
+  font-size: 1rem; /* Tamanho da fonte dos links e botões */
+  cursor: pointer; /* Indica que são clicáveis */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: inherit; /* A cor será herdada do elemento pai */
+  border: none; /* Remove as bordas padrão */
+  background: none; /* Remove o fundo padrão */
 }
 
+/* Estilos para elementos com foco, melhorando a acessibilidade */
 a:focus, button:focus, input:focus, textarea:focus {
-  outline: 3px solid var(--cor-destaque);
-  outline-offset: 3px;
+  outline: 3px solid var(--cor-destaque); /* Cria um contorno ao redor do elemento com foco */
+  outline-offset: 3px; /* Distância do contorno em relação ao elemento */
 }
 
+/* Estilos para o header da página */
 header {
-  background-color: var(--cor-secundaria);
-  color: white;
-  padding: 15px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+  background-color: var(--cor-secundaria); /* Cor de fundo do header */
+  color: white; /* Cor do texto do header */
+  padding: 15px 20px; /* Espaçamento interno */
+  position: fixed; /* Fixa o header no topo */
+  width: 100%; /* Ocupa toda a largura da página */
+  top: 0; /* Fica no topo da página */
+  z-index: 1000; /* Garante que o header fique acima de outros elementos */
 }
 
+/* Estilos para o menu de navegação */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
+  display: flex; /* Utiliza Flexbox para o layout */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+  align-items: center; /* Alinha os itens verticalmente */
+  max-width: 1100px; /* Limita a largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo */
 }
 
+/* Estilos para o logo */
 .logo {
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 700; /* Define a espessura da fonte */
+  font-size: 1.5rem; /* Define o tamanho da fonte */
 }
 
+/* Estilos para o menu de navegação */
 .menu {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+  list-style: none; /* Remove os marcadores das listas */
+  display: flex; /* Utiliza Flexbox */
+  gap: 25px; /* Espaço entre os itens do menu */
 }
 
+/* Estilos para cada item do menu */
 .menu li {
-  list-style: none;
+  list-style: none; /* Remove a marcação de lista */
 }
 
+/* Estilos para os links do menu */
 .menu a {
-  color: white;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  color: white; /* Cor do texto dos links */
+  font-weight: 500; /* Peso da fonte */
+  font-size: 1rem; /* Tamanho da fonte */
+  transition: color 0.3s ease; /* Efeito de transição para a cor */
 }
 
+/* Estilos para o hover (passar o mouse) nos links */
 .menu a:hover {
-  color: var(--cor-destaque);
+  color: var(--cor-destaque); /* Muda a cor do link quando passa o mouse */
 }
 
+/* Estilos para o conteúdo principal */
 main {
-  max-width: 1100px;
-  margin: 90px auto 40px;
-  padding: 0 20px;
+  max-width: 1100px; /* Limita a largura máxima */
+  margin: 90px auto 40px; /* Margem em cima (para o header fixo), e margem embaixo */
+  padding: 0 20px; /* Padding lateral */
 }
 
+/* Estilos para a seção de introdução */
 .section-intro {
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 40px; /* Espaçamento abaixo da seção */
 }
 
+/* Estilos para o título da seção de introdução */
 .section-intro h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  color: var(--cor-secundaria);
+  font-size: 2.5rem; /* Tamanho maior para o título */
+  margin-bottom: 15px; /* Espaçamento abaixo do título */
+  color: var(--cor-secundaria); /* Cor do título */
 }
 
+/* Estilos para o parágrafo da seção de introdução */
 .section-intro p {
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 1.2rem; /* Tamanho da fonte do parágrafo */
+  color: #555; /* Cor do texto */
 }
 
+/* Estilos para os títulos das seções musicais e de contato */
 .section-musicas h2,
 .section-contato h2 {
-  font-size: 25px;
-  margin-bottom: 20px;
-  color: var(--cor-secundaria);
-  border-bottom: 3px solid var(--cor-destaque);
-  padding-bottom: 8px;
-  max-width: 280px;
+  font-size: 25px; /* Tamanho do título */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+  color: var(--cor-secundaria); /* Cor do título */
+  border-bottom: 3px solid var(--cor-destaque); /* Linha abaixo do título */
+  padding-bottom: 8px; /* Espaçamento interno abaixo da linha */
+  max-width: 280px; /* Limita a largura máxima */
 }
 
+/* Estilos para a lista de músicas */
 #lista-musicas {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: flex; /* Flexbox para o layout */
+  flex-direction: column; /* Lista em coluna */
+  gap: 20px; /* Espaço entre os itens */
 }
 
+/* Estilos para cada item da música */
 .musica-item {
-  display: flex;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.25s ease;
+  display: flex; /* Flexbox */
+  background-color: #fff; /* Cor de fundo branca */
+  border-radius: 12px; /* Borda arredondada */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombras sutis */
+  overflow: hidden; /* Esconde o conteúdo que excede a área do item */
+  cursor: pointer; /* Indica que é clicável */
+  transition: transform 0.25s ease; /* Transição suave para o efeito de hover */
 }
 
+/* Estilos para o hover dos itens de música */
 .musica-item:hover {
-  transform: scale(1.02);
+  transform: scale(1.02); /* Aumenta ligeiramente o tamanho do item */
 }
 
+/* Estilos para a imagem de cada música */
 .musica-item img {
-  width: 150px;
-  object-fit: cover;
+  width: 150px; /* Largura fixa para a imagem */
+  object-fit: cover; /* Garante que a imagem cubra a área sem deformação */
 }
 
+/* Estilos para as informações de cada música */
 .musica-info {
-  padding: 15px 20px;
-  flex: 1;
+  padding: 15px 20px; /* Espaçamento interno */
+  flex: 1; /* Ocupa o restante do espaço disponível */
 }
 
+/* Estilos para o título de cada música */
 .musica-info h3 {
-  font-size: 1.4rem;
-  margin-bottom: 8px;
-  color: #333;
+  font-size: 1.4rem; /* Tamanho do título */
+  margin-bottom: 8px; /* Espaçamento abaixo do título */
+  color: #333; /* Cor do título */
 }
 
+/* Estilos para a descrição de cada música */
 .musica-info p {
-  font-size: 1rem;
-  color: #666;
+  font-size: 1rem; /* Tamanho da descrição */
+  color: #666; /* Cor da descrição */
 }
 
-/* Botões acessíveis e com contraste */
+/* Estilos gerais para os botões */
 .btn {
-  padding: 12px 25px;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  color: white;
-  background-color: var(--cor-secundaria);
-  transition: background-color 0.3s ease;
-  border: none;
-  display: inline-block;
+  padding: 12px 25px; /* Padding do botão */
+  border-radius: 6px; /* Bordas arredondadas */
+  font-weight: 600; /* Peso da fonte */
+  font-size: 1rem; /* Tamanho da fonte */
+  text-decoration: none; /* Remove o sublinhado */
+  color: white; /* Cor do texto */
+  background-color: var(--cor-secundaria); /* Cor de fundo */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+  border: none; /* Remove a borda */
+  display: inline-block; /* Exibição como bloco inline */
 }
 
+/* Estilos para o hover e foco dos botões */
 .btn:hover,
 .btn:focus {
-  background-color: #0077aa;
+  background-color: #0077aa; /* Muda a cor de fundo ao passar o mouse */
 }
 
-/* Botões específicos de redes sociais com cores e ícones */
-
+/* Estilos específicos para os botões de redes sociais */
 .btn.facebook {
-  background-color: #1877F2; /* Azul Facebook */
+  background-color: #1877F2; /* Azul do Facebook */
 }
 
 .btn.facebook:hover,
 .btn.facebook:focus {
-  background-color: #145dbf;
+  background-color: #145dbf; /* Azul mais escuro ao passar o mouse */
 }
 
 .btn.instagram {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  color: white;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); /* Gradiente do Instagram */
+  color: white; /* Cor do texto */
 }
 
 .btn.instagram:hover,
 .btn.instagram:focus {
-  filter: brightness(0.9);
+  filter: brightness(0.9); /* Diminui o brilho ao passar o mouse */
 }
 
 .btn.tiktok {
-  background-color: #010101; /* Preto TikTok */
-  color: #69C9D0; /* Azul TikTok */
-  font-weight: 700;
-  text-shadow: 0 0 5px #69C9D0;
+  background-color: #010101; /* Preto do TikTok */
+  color: #69C9D0; /* Azul claro do TikTok */
+  font-weight: 700; /* Peso da fonte */
+  text-shadow: 0 0 5px #69C9D0; /* Sombras do texto */
 }
 
 .btn.tiktok:hover,
 .btn.tiktok:focus {
-  color: #00f0ff;
-  text-shadow: 0 0 10px #00f0ff;
+  color: #00f0ff; /* Muda a cor para azul claro */
+  text-shadow: 0 0 10px #00f0ff; /* Aumenta o brilho da sombra */
 }
 
 .btn.youtube {
-  background-color: #FF0000; /* Vermelho YouTube */
+  background-color: #FF0000; /* Vermelho do YouTube */
 }
 
 .btn.youtube:hover,
 .btn.youtube:focus {
-  background-color: #cc0000;
+  background-color: #cc0000; /* Vermelho mais escuro ao passar o mouse */
 }
 
 /* Ícones simples via pseudo-elementos */
 .btn.facebook::before {
-  content: "📘 ";
+  content: "📘 "; /* Ícone do Facebook */
 }
 
 .btn.instagram::before {
-  content: "📸 ";
+  content: "📸 "; /* Ícone do Instagram */
 }
 
 .btn.tiktok::before {
-  content: "🎵 ";
+  content: "🎵 "; /* Ícone do TikTok */
 }
 
 .btn.youtube::before {
-  content: "▶️ ";
+  content: "▶️ "; /* Ícone do YouTube */
 }
 
-/* Seção de contato com fundo claro e bordas suaves */
+/* Estilos para a seção de contato */
 .section-contato {
-  background-color: #eef6fb;
-  padding: 30px 20px;
-  border-radius: 12px;
-  margin-top: 50px;
+  background-color: #eef6fb; /* Cor de fundo clara */
+  padding: 30px 20px; /* Padding da seção */
+  border-radius: 12px; /* Bordas arredondadas */
+  margin-top: 50px; /* Margem superior */
 }
 
 .contato-btns {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 25px;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: flex; /* Flexbox */
+  gap: 15px; /* Espaçamento entre os botões */
+  margin-bottom: 25px; /* Espaçamento inferior */
+  justify-content: center; /* Centraliza os botões */
+  flex-wrap: wrap; /* Quebra linha quando necessário */
 }
 
+/* Estilos para os campos do formulário de contato */
 .form-contato label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 6px;
-  margin-top: 12px;
-  color: #333;
+  display: block; /* Exibe o rótulo como bloco */
+  font-weight: 600; /* Peso da fonte */
+  margin-bottom: 6px; /* Espaçamento abaixo do rótulo */
+  margin-top: 12px; /* Espaçamento acima do rótulo */
+  color: #333; /* Cor do texto */
 }
 
+/* Estilos para os inputs e textarea */
 .form-contato input,
 .form-contato textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #bbb;
-  border-radius: 6px;
-  font-size: 1rem;
-  resize: vertical;
+  width: 100%; /* Largura total */
+  padding: 10px; /* Padding */
+  border: 1px solid #bbb; /* Borda suave */
+  border-radius: 6px; /* Bordas arredondadas */
+  font-size: 1rem; /* Tamanho da fonte */
+  resize: vertical; /* Permite o redimensionamento vertical do textarea */
 }
 
+/* Estilos para o botão de envio */
 .form-contato button.enviar {
-  margin-top: 15px;
-  background-color: var(--cor-destaque);
-  border: none;
-  cursor: pointer;
-  color: white;
+  margin-top: 15px; /* Espaçamento acima */
+  background-color: var(--cor-destaque); /* Cor de fundo do botão */
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Indica que é clicável */
+  color: white; /* Cor do texto */
 }
 
+/* Estilos para o hover do botão de envio */
 .form-contato button.enviar:hover {
-  background-color: #0077bb;
+  background-color: #0077bb; /* Muda a cor para azul ao passar o mouse */
 }
 
+/* Estilos para a resposta do formulário */
 #resposta {
-  margin-top: 20px;
-  font-weight: 600;
-  color: green;
-  text-align: center;
+  margin-top: 20px; /* Margem superior */
+  font-weight: 600; /* Peso da fonte */
+  color: green; /* Cor verde */
+  text-align: center; /* Alinha o texto no centro */
 }
 
-/* Rodapé */
+/* Estilos para o rodapé */
 footer {
-  background-color: #1e2a38;
-  color: white;
-  padding: 20px;
-  text-align: center;
+  background-color: #1e2a38; /* Cor de fundo do rodapé */
+  color: white; /* Cor do texto */
+  padding: 20px; /* Padding */
+  text-align: center; /* Alinha o texto no centro */
 }
 
-/* Visibilidade para leitores de tela */
+/* Estilos para elementos ocultos, acessíveis para leitores de tela */
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
+  position: absolute; /* Posiciona fora da tela */
+  width: 1px; /* Largura mínima */
+  height: 1px; /* Altura mínima */
+  margin: -1px; /* Margem negativa */
+  overflow: hidden; /* Oculta o conteúdo */
+  clip-path: inset(50%); /* Corte o conteúdo */
+  white-space: nowrap; /* Evita quebra de linha */
+  border: 0; /* Remove borda */
 }
 
-/* Responsivo para dispositivos móveis */
+/* Estilos responsivos para dispositivos móveis */
 @media(max-width: 768px) {
   .musica-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Alinha o texto no centro */
   }
 
   .musica-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px 12px 0 0;
+    width: 100%; /* Largura total da imagem */
+    height: auto; /* Altura automática */
+    border-radius: 12px 12px 0 0; /* Bordas arredondadas apenas no topo */
   }
 
   .musica-info {
-    padding: 15px 10px;
+    padding: 15px 10px; /* Padding reduzido */
   }
 
   .menu {
-    gap: 12px;
+    gap: 12px; /* Menos espaço entre os itens do menu */
   }
 
+  /* Estilos para o botão de troca de tema */
   #temaToggle {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    padding: 10px 16px;
-    font-size: 1rem;
-    background-color: var(--cor-destaque);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    z-index: 999;
-    transition: background-color 0.3s ease;
+    position: fixed; /* Posiciona fixo na tela */
+    top: 15px; /* Distância do topo */
+    right: 15px; /* Distância da direita */
+    padding: 10px 16px; /* Padding */
+    font-size: 1rem; /* Tamanho da fonte */
+    background-color: var(--cor-destaque); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Indica que é clicável */
+    z-index: 999; /* Garante que fique acima de outros elementos */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
   }
 
+  /* Estilos para o hover do botão de troca de tema */
   #temaToggle:hover {
-    background-color: #0077aa;
+    background-color: #0077aa; /* Muda a cor ao passar o mouse */
   }
 }
