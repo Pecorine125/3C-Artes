@@ -7,8 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="Css/folhaEstilo.css" />
 </head>
-<body>
-  <header>
+<body> 
+ <!--aqui esta os elementos de navegação comn função para mudar o tema do site-->
+  <header> //
     <nav class="navbar" aria-label="Menu principal">
       <div class="logo">Música nas Artes</div>
       <ul class="menu">
@@ -20,6 +21,7 @@
     <button id="temaToggle" aria-label="Alternar tema">🌙 / ☀️</button>
   </header>
 
+  <!--Aqui tem um texto que explica sobreo site-->
   <main>
     <section class="section-intro">
       <h1>Bem-vindo ao portal Música nas Artes</h1>
@@ -34,21 +36,23 @@
       </p>
     </section>
   </main>
-
+ 
+  <!--Aqui estão os crédito do autor e o ano que foi criado o site-->
   <footer>
     <p>© 2025 Música nas Artes. Todos os direitos reservados.</p>
   </footer>
 
   <script>
+    //Aqui estão as variaveis dessa paginas
     const btn = document.getElementById('temaToggle');
     const temaSalvo = localStorage.getItem('tema');
-
+    // Aqui vai trocar o tema para Claro ou Escuro
     if (temaSalvo) {
       document.body.classList.add(temaSalvo);
     } else {
       document.body.classList.add('light');
     }
-
+    //Aqui vai fazer a função de Click que vai realizar a função da troca de Tema
     btn.addEventListener('click', () => {
       if (document.body.classList.contains('light')) {
         document.body.classList.replace('light', 'dark');
