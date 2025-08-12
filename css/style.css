@@ -1,6 +1,6 @@
 /* Definição de variáveis de cores e fontes */
 :root {
-  --cor-fundo: #ffffff;  /* Cor de fundo padrão */
+  --cor-fundo: #aca5a5;  /* Cor de fundo padrão */
   --cor-texto: #111111;  /* Cor do texto padrão */
   --cor-secundaria: #45ac94; /* Cor secundária (geralmente usada para elementos como header ou botões) */
   --cor-destaque: #00aaff; /* Cor de destaque (para hover ou foco) */
@@ -190,7 +190,7 @@ main {
   font-weight: 600; /* Peso da fonte */
   font-size: 1rem; /* Tamanho da fonte */
   text-decoration: none; /* Remove o sublinhado */
-  color: white; /* Cor do texto */
+  color: rgb(176, 172, 172); /* Cor do texto */
   background-color: var(--cor-secundaria); /* Cor de fundo */
   transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
   border: none; /* Remove a borda */
