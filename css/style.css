@@ -190,7 +190,7 @@ main {
   font-weight: 600; /* Peso da fonte */
   font-size: 1rem; /* Tamanho da fonte */
   text-decoration: none; /* Remove o sublinhado */
-  color: rgb(130, 115, 115); /* Cor do texto */
+  color: rgb(62, 62, 62); /* Cor do texto */
   background-color: var(--cor-secundaria); /* Cor de fundo */
   transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
   border: none; /* Remove a borda */
