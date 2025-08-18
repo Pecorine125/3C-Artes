@@ -1,6 +1,6 @@
 /* Definição de variáveis de cores e fontes */
 :root {
-  --cor-fundo: #346055;  /* Cor de fundo padrão */
+  --cor-fundo: #818d8a;  /* Cor de fundo padrão */
   --cor-texto: #111111;  /* Cor do texto padrão */
   --cor-secundaria: #52e3c1; /* Cor secundária (geralmente usada para elementos como header ou botões) */
   --cor-destaque: #00aaff; /* Cor de destaque (para hover ou foco) */
